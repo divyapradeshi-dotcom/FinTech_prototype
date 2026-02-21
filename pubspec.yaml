@@ -1,0 +1,59 @@
+name: fintech_prototype
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  fl_chart: ^0.66.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: "^0.13.1"  # Added version here
+
+# flutter_launcher_icons configuration (MUST be at root level, NOT under dev_dependencies)
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
+  adaptive_icon_background: "#0C1A2B"
+  adaptive_icon_foreground: "assets/images/logo.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/logo.png # Added this since you reference it
+    - assets/images/avatar.jpeg
+
+  fonts:
+    - family: LemonMilk
+      fonts:
+        - asset: assets/fonts/LEMONMILK-Light.otf
+          weight: 300
+        - asset: assets/fonts/LEMONMILK-Regular.otf
+          weight: 400
+        - asset: assets/fonts/LEMONMILK-Medium.otf
+          weight: 500
+        - asset: assets/fonts/LEMONMILK-Bold.otf
+          weight: 700
+        - asset: assets/fonts/LEMONMILK-LightItalic.otf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/LEMONMILK-RegularItalic.otf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/LEMONMILK-MediumItalic.otf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/LEMONMILK-BoldItalic.otf
+          weight: 700
+          style: italic
